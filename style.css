@@ -1,0 +1,133 @@
+ /* 초기화 */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    background: #6200ee;
+    color: white;
+    text-align: center;
+    /* outline: 2px solid red; */
+    box-shadow: 6px 0px 6px #666;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* z-방향으로 올려줌으로써 아래가 우선인걸을 바꿈 */
+    z-index: 999;
+}
+
+header>h1 {
+    font-size: 24px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+header>nav {
+    /* outline: 1px solid black; */
+    overflow: hidden;
+}
+
+header>nav>ul>li {
+    float: left;
+    width: 33.33%;
+    text-transform: uppercase;
+}
+
+header>nav>ul>li>a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    opacity: 0.6;
+    position: relative;
+    font-weight: normal;
+}
+
+/*
+    selecte : css 효과 주기 위한 세팅...? 
+    active : css를 통해 화면이 바뀔때 메뉴에 효과를 주기 위한 세팅 
+*/
+header>nav>ul>li>a:hover,
+header>nav>ul>li>a:active,
+header>nav>ul>li>a.selected {
+    opacity: 1;
+}
+
+header>nav>ul>li>a.selected:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    bottom: 0;
+}
+
+/* 콘텐츠 - 동물리스트 */
+section {
+    margin-top: 86px;
+    text-align: center;
+    padding: 15px;
+    padding-top: 0;
+    overflow: hidden;
+}
+
+section>h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#pet_list {
+    /* outline: 2px solid red; */
+    overflow: hidden;
+}
+
+#pet_list>li {
+    width: 49%;
+    overflow: hidden;
+    float: left;
+    margin-right: 2%;
+    position: relative;
+    margin-bottom: 2%;
+}
+
+#pet_list>li:nth-child(2n) {
+    margin-right: 0;
+}
+
+#pet_list>li>img {
+    width: 100%;
+}
+
+#pet_list>li>.name {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0;
+    bottom: 0;
+    color: white;
+    line-height: 60px;
+    font-size: 16px;
+    text-transform: capitalize;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애완동물정보</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        1.동물이미지
+        크기: 400x400
+        이름: 
+            dog01~06.jpg
+            cat01~06
+            birds01~06
+            /images 폴더에 저장
+        2.내부 스타일 -> 외부스타일(css/style.css)
+     -->
+    <div id="wrap">
+        <header>
+            <h1>Pets</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">dogs</a></li>
+                    <li><a href="./cats.html">cats</a></li>
+                    <li><a class="selected" href="./birds.html">birds</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>birds</h1>
+            <ul id="pet_list">
+                <li>
+                    <img src="images/bird1.jpg" alt="birds1">
+                    <p class="name">chamsae</p>
+                </li>
+                <li>
+                    <img src="images/bird2.jpg" alt="birds2">
+                    <p class="name">hynsae</p>
+                </li>
+                <li>
+                    <img src="images/bird3.jpg" alt="birds3">
+                    <p class="name">arloc_dalloc</p>
+                </li>
+                <li>
+                    <img src="images/bird4.jpg" alt="birds4">
+                    <p class="name">pinksae</p>
+                </li>
+                <li>
+                    <img src="images/bird5.jpg" alt="birds5">
+                    <p class="name">eagle</p>
+                </li>
+                <li>
+                    <img src="images/bird6.jpg" alt="birds6">
+                    <p class="name">sae</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--end wrap-->
+
+</body>
+
+</html>
